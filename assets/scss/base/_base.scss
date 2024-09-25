@@ -1,0 +1,64 @@
+//base mixin
+@mixin display-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Libre Franklin", sans-serif;
+    width: 100%;
+    // typography
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
+    a{
+        font-size: 20px;
+        color: #000;
+    }
+    section{
+        padding: 16px;
+    }
+}
+
+// Desktop style
+@media (min-width: $desktop){
+    body{
+        // typography
+        h1{
+            font-size: 45px;
+        }
+        h2{
+            font-size: 37px;
+        }
+        h3{
+            font-size: 27px;
+        }
+        p{
+            font-size: 20px;
+        }
+        a{
+            font-size: 22px;
+            color: #000;
+        }
+        section{
+            padding: 16px;
+        }
+    }
+}

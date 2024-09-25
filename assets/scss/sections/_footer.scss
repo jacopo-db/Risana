@@ -1,0 +1,119 @@
+.footer{
+    background-color: $secondary-grey;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 16px 16px 16px;
+    gap: 30px;
+    text-align: center;
+    a{
+        color: $primary-green;
+        opacity: 0.7;
+        &:hover{
+            opacity: 1;
+        }
+    }
+    &-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        &-box{
+            background-color: #202020;
+            width: 80%;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+            gap: 15px;
+        }
+    }
+
+    img{
+        margin: 20px 0;
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+    }
+    &-logo{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        &-menu{
+            display: flex;
+            flex-direction: column;
+            opacity: 0.7;
+            gap: 20px;
+            span{
+                font-size: 20px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+        &-social{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            a{
+                color: #fff;
+                scale: 1.5;
+                padding: 5px 10px;
+                border-radius: 10px;
+                border: 2px solid transparent;
+                &:hover{
+                    border: 2px solid $primary-green;
+                }
+            }
+        }
+    }
+    &-copy{
+        opacity: 0.7;
+    }
+}
+
+// Desktop style
+@media (min-width: $desktop){
+    .footer{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        &-container{
+            flex-direction: row;
+            justify-content: space-around;
+            &-box{
+                width: 25%;
+                min-height: 250px;
+                gap: 0;
+                justify-content: space-around;
+            }
+        }
+        &-logo{
+            &-menu{
+                span{
+                    font-size: 22px;
+                }
+                ul{
+                    gap: 10px;
+                    a{
+                        font-size: 20px;
+                    }
+                }
+            }
+            &-social{
+                gap: 100px;
+            }
+        }
+    }
+}

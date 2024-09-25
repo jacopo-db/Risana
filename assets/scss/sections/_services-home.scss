@@ -1,0 +1,95 @@
+.services-home{
+    text-align: center;
+    padding: 30px 16px;
+    background-color: $secondary-blue;
+    color: #fff;
+    &-container{
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        &-cards{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            justify-content: space-between;
+            div{
+                background-color: #fff;
+                width: 150px;
+                height: 150px;
+                border-radius: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i{
+                    color: $secondary-blue;
+                    scale: 3;
+                }
+            }
+            span{
+                font-size: 20px;
+                color: $primary-green;
+                font-weight: 700;
+            }
+            a{
+                color: $primary-green;
+                opacity: 0.8;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            &-btn{
+                padding: 10px;
+                border-bottom: 1px solid $secondary-blue;
+                &:hover{
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            img{
+                width: 70%;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.rent-home{
+    background-color: $primary-grey;
+    color: #000;
+    a{
+        color: $primary-blue;
+        padding: 10px;
+        border: 2px solid $primary-blue;
+        border-radius: 10px;
+        &:hover{
+            box-shadow: 0px 0px 10px 3px lightblue;
+        }
+    }
+}
+
+// Desktop style
+@media (min-width: $desktop){
+    .services-home{
+        padding: 60px 0;
+        &-container{
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 0;
+            padding: 60px 0;
+            &-cards{
+                width: 20%;
+                min-width: 287px;
+                max-width: 360px;
+                .u-rent{
+                    height: 301.58px;
+                    object-fit: cover;
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.rent-card{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    background-color: $primary-grey;
+    a{
+        padding: 15px;
+        background-color: $primary-blue;
+        border-radius: 10px;
+        color: #fff;
+        opacity: 0.9;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+.products-container-box-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    gap: 15px;
+    box-shadow: 0px 0px 8px 1px #000;
+    border-radius: 10px;
+    img{
+        width: 273px;
+        height: 290px;
+        object-fit: cover;
+    }
+}
+
+// Desktop style
+@media (min-width: $desktop){
+    .rent-card{
+        padding: 150px 0;
+    }
+    .products-container-box-card{
+        width: 30%;
+        height: 485px;
+    }
+}

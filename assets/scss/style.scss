@@ -1,0 +1,24 @@
+// base files
+@import "base/variables";
+@import "base/base";
+
+// components
+@import "components/navbar";
+@import "components/buttons";
+@import "components/cards";
+
+// sections
+
+ // home
+@import "sections/header";
+@import "sections/method-whoiam-home";
+@import "sections/applications-area";
+@import "sections/services-home";
+@import "sections/contact";
+@import "sections/footer";
+
+ // chi Siamo
+@import "sections/who-iam";
+
+// prodotti
+@import "sections/products";

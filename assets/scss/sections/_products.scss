@@ -1,0 +1,80 @@
+.products{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    h3{
+        font-size: 25px;
+    }
+    &-container{
+        margin-top: 30px;
+        padding-top: 40px;
+        &-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+    }
+}
+.products-rent-u{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 30px;
+    text-align: center;
+    background-color: $primary-blue;
+    color: #fff;
+    margin-top: 120px;
+    h3{
+        font-size: 30px;
+    }
+    .services-home-container-cards{
+        h3{
+            color: $primary-green;
+        }
+        a{
+            border: 1px solid $primary-green;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+.rent-card-products{
+    background-color: $primary-blue;
+}
+
+// Desktop style
+@media (min-width: $desktop){
+    .products{
+        &-container{
+            &-box{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .products-rent-u{
+        flex-direction: row;
+        padding: 50px;
+        justify-content: space-around;
+        .products-rent-u-h{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+            position: relative;
+            bottom: 70px;
+        }
+        .services-home-container-cards{
+            max-width: none;
+            width: 40%;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.btn{
+    background-color: $primary-green;
+    border-radius: 4px;
+    padding: 10px;
+    opacity: 0.8;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.header-btn{
+    border: 2px solid transparent;
+    border-bottom: 2px solid $primary-green;
+    padding: 10px;
+    opacity: 0.8;
+    color: #fff;
+    &:hover{
+        opacity: 1;
+        border: 2px solid $primary-green;
+        border-radius: 15px;
+    }
+}
+
+.header-img-btn{
+    display: flex;
+    gap: 40px;
+}
