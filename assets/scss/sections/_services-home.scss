@@ -9,13 +9,12 @@
         flex-direction: column;
         gap: 70px;
         &-cards{
-            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px;
             justify-content: space-between;
-            div{
+            gap: 30px;
+            &-img{
                 background-color: #fff;
                 width: 150px;
                 height: 150px;
@@ -28,33 +27,41 @@
                     scale: 3;
                 }
             }
-            span{
-                font-size: 20px;
-                color: $primary-green;
-                font-weight: 700;
-            }
-            a{
-                color: $primary-green;
-                opacity: 0.8;
-                &:hover{
-                    opacity: 1;
+            &-content{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: space-between;
+                span{
+                    font-size: 20px;
+                    color: $primary-green;
+                    font-weight: 700;
                 }
-            }
-            &-btn{
-                padding: 10px;
-                border-bottom: 1px solid $secondary-blue;
-                &:hover{
-                    border-bottom: 1px solid #fff;
+                a{
+                    color: $primary-green;
+                    opacity: 0.8;
+                    &:hover{            
+                        opacity: 1;
+                    }
+                }
+                &-btn{
+                    padding: 10px;
+                    border-bottom: 1px solid $secondary-blue;
+                    &:hover{
+                        border-bottom: 1px solid #fff;
+                    }
                 }
             }
             img{
                 width: 70%;
                 border-radius: 20px;
             }
+            .quality-content{
+                justify-content: flex-start;
+            }
         }
     }
 }
-
 .rent-home{
     background-color: $primary-grey;
     color: #000;
@@ -80,15 +87,21 @@
             padding: 60px 0;
             &-cards{
                 width: 20%;
-                min-width: 287px;
+                min-width: 322px;
                 max-width: 360px;
+                &-content{
+                    height: 250px;
+                }
                 .u-rent{
                     height: 301.58px;
                     object-fit: cover;
                 }
             }
-            img{
-                width: 100%;
+            .rent-card{
+                min-width: 360px;
+                img{
+                    width: 100%;
+                }
             }
         }
     }

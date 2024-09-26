@@ -1,4 +1,4 @@
-.rent-card{
+.link-card{
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,6 @@
         }
     }
 }
-
 .products-container-box-card{
     display: flex;
     flex-direction: column;
@@ -27,6 +26,7 @@
     gap: 15px;
     box-shadow: 0px 0px 8px 1px #000;
     border-radius: 10px;
+    padding: 20px;
     img{
         width: 273px;
         height: 290px;
@@ -36,7 +36,7 @@
 
 // Desktop style
 @media (min-width: $desktop){
-    .rent-card{
+    .link-card{
         padding: 150px 0;
     }
     .products-container-box-card{

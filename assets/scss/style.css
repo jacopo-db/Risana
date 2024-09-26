@@ -14,10 +14,13 @@ body h1 {
   font-size: 35px;
 }
 body h2 {
-  font-size: 27px;
+  font-size: 35px;
 }
 body h3 {
-  font-size: 20px;
+  font-size: 27px;
+}
+body h4 {
+  font-size: 22px;
 }
 body p {
   font-size: 18px;
@@ -35,13 +38,16 @@ body section {
     font-size: 45px;
   }
   body h2 {
-    font-size: 37px;
+    font-size: 45px;
   }
   body h3 {
-    font-size: 27px;
+    font-size: 37px;
+  }
+  body h4 {
+    font-size: 28px;
   }
   body p {
-    font-size: 20px;
+    font-size: 22px;
   }
   body a {
     font-size: 22px;
@@ -158,7 +164,7 @@ body section {
   gap: 40px;
 }
 
-.rent-card {
+.link-card {
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -167,14 +173,14 @@ body section {
   gap: 30px;
   background-color: #ECF0F1;
 }
-.rent-card a {
+.link-card a {
   padding: 15px;
   background-color: #256da8;
   border-radius: 10px;
   color: #fff;
   opacity: 0.9;
 }
-.rent-card a:hover {
+.link-card a:hover {
   opacity: 1;
 }
 
@@ -187,6 +193,7 @@ body section {
   gap: 15px;
   box-shadow: 0px 0px 8px 1px #000;
   border-radius: 10px;
+  padding: 20px;
 }
 .products-container-box-card img {
   width: 273px;
@@ -195,7 +202,7 @@ body section {
 }
 
 @media (min-width: 961px) {
-  .rent-card {
+  .link-card {
     padding: 150px 0;
   }
   .products-container-box-card {
@@ -208,15 +215,14 @@ body section {
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-}
-.header .welcome h1 {
-  font-size: 16px;
+  justify-content: space-around;
+  padding: 20px 0;
 }
 .header .welcome-social {
   display: flex;
   gap: 20px;
+  right: 30px;
 }
 .header-logo {
   background-color: #fff;
@@ -232,7 +238,7 @@ body section {
 }
 .header-img {
   position: relative;
-  background-image: url("/assets/img/images_settori-di-applicazione_edilizia_facciata-big.webp");
+  background-image: url("../../../assets/img/images_settori-di-applicazione_edilizia_facciata-big.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -311,7 +317,7 @@ body section {
   font-size: 40px;
 }
 .who-iam-home-container .partner-home {
-  font-size: 25px;
+  font-size: 28px;
 }
 .who-iam-home-container a img {
   display: block;
@@ -352,7 +358,7 @@ body section {
   }
   .who-home .who-iam-home-container {
     width: 90%;
-    min-width: 305px;
+    min-width: 332px;
   }
   .who-home .who-iam-home-container-two {
     border-radius: 20px;
@@ -404,14 +410,13 @@ body section {
   gap: 70px;
 }
 .services-home-container-cards {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
   justify-content: space-between;
+  gap: 30px;
 }
-.services-home-container-cards div {
+.services-home-container-cards-img {
   background-color: #fff;
   width: 150px;
   height: 150px;
@@ -420,32 +425,41 @@ body section {
   align-items: center;
   justify-content: center;
 }
-.services-home-container-cards div i {
+.services-home-container-cards-img i {
   color: #254872;
   scale: 3;
 }
-.services-home-container-cards span {
+.services-home-container-cards-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+.services-home-container-cards-content span {
   font-size: 20px;
   color: #a3d359;
   font-weight: 700;
 }
-.services-home-container-cards a {
+.services-home-container-cards-content a {
   color: #a3d359;
   opacity: 0.8;
 }
-.services-home-container-cards a:hover {
+.services-home-container-cards-content a:hover {
   opacity: 1;
 }
-.services-home-container-cards-btn {
+.services-home-container-cards-content-btn {
   padding: 10px;
   border-bottom: 1px solid #254872;
 }
-.services-home-container-cards-btn:hover {
+.services-home-container-cards-content-btn:hover {
   border-bottom: 1px solid #fff;
 }
 .services-home-container-cards img {
   width: 70%;
   border-radius: 20px;
+}
+.services-home-container-cards .quality-content {
+  justify-content: flex-start;
 }
 
 .rent-home {
@@ -474,14 +488,20 @@ body section {
   }
   .services-home-container-cards {
     width: 20%;
-    min-width: 287px;
+    min-width: 322px;
     max-width: 360px;
+  }
+  .services-home-container-cards-content {
+    height: 250px;
   }
   .services-home-container-cards .u-rent {
     height: 301.58px;
     object-fit: cover;
   }
-  .services-home-container img {
+  .services-home-container .rent-card {
+    min-width: 360px;
+  }
+  .services-home-container .rent-card img {
     width: 100%;
   }
 }
@@ -634,6 +654,10 @@ body section {
 .footer-copy {
   opacity: 0.7;
 }
+.footer-copy p {
+  padding-top: 20px;
+  font-size: 16px;
+}
 
 @media (min-width: 961px) {
   .footer {
@@ -647,8 +671,8 @@ body section {
     justify-content: space-around;
   }
   .footer-container-box {
-    width: 25%;
-    min-height: 250px;
+    width: 30%;
+    min-height: 300px;
     gap: 0;
     justify-content: space-around;
   }
@@ -729,9 +753,6 @@ body section {
   margin-top: 20px;
   gap: 10px;
 }
-.products h3 {
-  font-size: 25px;
-}
 .products-container {
   margin-top: 30px;
   padding-top: 40px;
@@ -765,6 +786,12 @@ body section {
   border: 1px solid #a3d359;
   padding: 10px;
   border-radius: 10px;
+  color: #a3d359;
+  opacity: 0.8;
+}
+.products-rent-u .services-home-container-cards a:hover {
+  opacity: 1;
+  box-shadow: 0 0 5px 2px #a3d359;
 }
 
 .rent-card-products {

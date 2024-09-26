@@ -4,12 +4,13 @@
         width: 100%;
         height: 50px;
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        h1{font-size: 16px;}
+        justify-content: space-around;
+        padding: 20px 0;
         &-social{
             display: flex;
             gap: 20px;
+            right: 30px;
         }
     }
     &-logo{
@@ -26,7 +27,7 @@
     }
     &-img{
         position: relative;
-        background-image: url("../../../assets/img/sabbiatrice_helix_3_20141222_1075883956.jpg");
+        background-image: url("../../../assets/img/images_settori-di-applicazione_edilizia_facciata-big.webp");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -53,5 +54,6 @@
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 1;
     }
-
 }
+
+
