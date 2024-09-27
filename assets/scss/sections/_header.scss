@@ -6,11 +6,18 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 20px 0;
+        padding: 30px 0;
+        opacity: 0.8;
         &-social{
             display: flex;
             gap: 20px;
             right: 30px;
+            a{
+            &:hover{
+                color: $primary-blue;
+                opacity: 1;
+            }
+        }
         }
     }
     &-logo{
@@ -27,7 +34,7 @@
     }
     &-img{
         position: relative;
-        background-image: url("../../../assets/img/images_settori-di-applicazione_edilizia_facciata-big.webp");
+        background-image: url("../../../assets/img/paesaggio.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -44,6 +51,12 @@
             z-index: 2;
         }
     }
+    &-img-who{
+        background-image: url("../../../assets/img/chi-siamo.jpg");
+    }
+    &-img-products{
+        background-image: url("../../../assets/img/prodotti.jpg");
+    }
     &-img::before{
         content: "";
         position: absolute;
@@ -53,6 +66,38 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 1;
+    }
+}
+
+@media (max-width: $medium){
+    .header{
+        .welcome{
+            h1{
+                font-size: 30px;
+            }
+            &-social{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop){
+    .header{
+        .welcome{
+            &-social{
+                gap: 45px;
+            }
+        }
+        &-logo{
+            height: 250px;
+            justify-content: flex-start;
+            margin-left: 20%;
+            img{
+                width: 180px;
+                height: 180px;
+            }
+        }
     }
 }
 
