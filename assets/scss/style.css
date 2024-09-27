@@ -243,7 +243,7 @@ body section {
 }
 .header-img {
   position: relative;
-  background-image: url("../../../assets/img/paesaggio.jpg");
+  background-image: url("../img/paesaggio.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -261,10 +261,10 @@ body section {
   z-index: 2;
 }
 .header-img-who {
-  background-image: url("../../../assets/img/chi-siamo.jpg");
+  background-image: url("../img/chi-siamo.jpg");
 }
 .header-img-products {
-  background-image: url("../../../assets/img/prodotti.jpg");
+  background-image: url("../img/prodotti.jpg");
 }
 .header-img::before {
   content: "";

@@ -34,7 +34,7 @@
     }
     &-img{
         position: relative;
-        background-image: url("../../../assets/img/paesaggio.jpg");
+        background-image: url("../img/paesaggio.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -52,10 +52,10 @@
         }
     }
     &-img-who{
-        background-image: url("../../../assets/img/chi-siamo.jpg");
+        background-image: url("../img/chi-siamo.jpg");
     }
     &-img-products{
-        background-image: url("../../../assets/img/prodotti.jpg");
+        background-image: url("../img/prodotti.jpg");
     }
     &-img::before{
         content: "";
