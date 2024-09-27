@@ -34,6 +34,7 @@
     }
     &-img{
         position: relative;
+        background-image: url("../../img/paesaggio.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -49,6 +50,12 @@
             position: relative;
             z-index: 2;
         }
+    }
+    &-img-who{
+        background-image: url("../../img/chi-siamo.jpg");
+    }
+    &-img-products{
+        background-image: url("../../img/prodotti.jpg");
     }
     &-img::before{
         content: "";
