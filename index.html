@@ -21,32 +21,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/491b4cbd80.js" crossorigin="anonymous"></script>
-    <!-- emailjs -->
-    <script src="index.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "eYUaGyTqSXbJOeW7y",
-            });
-        })();
-    </script>
-
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
 </head>
 <body>
     <header class="header">
@@ -263,17 +237,16 @@
     <section class="contact" id="contact">
         <h2>Contattaci</h2>
         <div class="contact-form" id="contact">
-            <form>
-                <input type="hidden" name="contact_number" value="697483">
+            <form id="contact-form">
                 <label>Nome</label>
-                <input type="text" id="name" name="user_name" placeholder="Es. Mario">
+                <input type="text" name="name" placeholder="Es. Mario" required>
                 <label>Cognome</label>
-                <input type="text" id="surname" name="user_surname" placeholder="Es. Rossi">
+                <input type="text" name="surname" placeholder="Es. Rossi" required>
                 <label>Email</label>
-                <input type="email" id="email" name="user_email" placeholder="esempio@email.com">
+                <input type="email" name="email" placeholder="esempio@email.com" required>
                 <label>Messaggio</label>
-                <textarea name="message" id="message" placeholder="Scrivi il tuo messaggio.."></textarea>
-                <input class="contact-form-btn" id="contact-form-btn" type="submit" value="Invia">
+                <textarea name="message" placeholder="Scrivi il tuo messaggio.." required></textarea>
+                <button class="contact-form-btn" id="contact-form-btn" type="submit">Invia</button>
             </form>
             <div class="contact-form-maps">
                 <h3>Vieni a trovarci!</h3>
@@ -327,5 +300,31 @@
             <p>Copyright© 2024 Jacopo Di Biagio. Designed by Jacopo Di Biagio. All rights reserved.</p>
         </div>
     </footer>
+    
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "eYUaGyTqSXbJOeW7y",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit'),
+        function(event){
+            event.preventDefault();
+
+            document.getElementById('status').innerHTML = "Invio in corso...";
+
+            emailjs.sendForm('contact_service', 'template_0o3z3rb', this)
+            .then(function() {
+                document.getElementById('status').innerHTML = "Messaggio inviato con successo!";
+            }, function(error) {
+                document.getElementById('status').innerHTML = "Errore nell'invio: " + JSON.stringify(error);
+            });
+        };
+    </script>
 </body>
 </html>
