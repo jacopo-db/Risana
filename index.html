@@ -300,31 +300,26 @@
             <p>Copyright© 2024 Jacopo Di Biagio. Designed by Jacopo Di Biagio. All rights reserved.</p>
         </div>
     </footer>
-    
     <!-- emailjs -->
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "eYUaGyTqSXbJOeW7y",
-            });
+            emailjs.init("eYUaGyTqSXbJOeW7y");
         })();
     </script>
     <script type="text/javascript">
-        document.getElementById('contact-form').addEventListener('submit'),
-        function(event){
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
-
             document.getElementById('status').innerHTML = "Invio in corso...";
-
             emailjs.sendForm('contact_service', 'template_0o3z3rb', this)
             .then(function() {
                 document.getElementById('status').innerHTML = "Messaggio inviato con successo!";
             }, function(error) {
                 document.getElementById('status').innerHTML = "Errore nell'invio: " + JSON.stringify(error);
             });
-        };
+        });
     </script>
 </body>
 </html>
