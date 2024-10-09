@@ -23,13 +23,13 @@
     &-logo{
         background-color: $primary-white;
         width: 100%;
-        height: 200px;
+        height: 220px;
         display: flex;
         justify-content: center;
         align-items: center;
         img{
-            width: 120px;
-            height: 120px;
+            width: 180px;
+            height: 180px;
         }
     }
     &-img{
@@ -56,6 +56,9 @@
     &-img-products{
         background-image: url("../img/prodotti.jpg");
     }
+    &-img-contact{
+        background-image: url("../img/contatti.jpg");
+    }
     &-img::before{
         content: "";
         position: absolute;
@@ -63,7 +66,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.3);
         z-index: 1;
     }
 }
@@ -84,17 +87,20 @@
 @media (min-width: $desktop){
     .header{
         .welcome{
+            h1{
+                font-size: 35px;
+            }
             &-social{
                 gap: 45px;
             }
         }
         &-logo{
             height: 250px;
-            justify-content: flex-start;
-            margin-left: 20%;
+            position: relative;
+            right: 25%;
             img{
-                width: 180px;
-                height: 180px;
+                width: 210px;
+                height: 210px;
             }
         }
     }

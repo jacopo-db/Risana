@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Services and rental of cutting-edge equipment for excellent restorations">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jacopo Di Biagio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Risana"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://jacopo-db.github.io/Risana/"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:locale" content="it_IT"/>
+    <title>Chi siamo | Risana</title>
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300..700&display=swap" rel="stylesheet">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/491b4cbd80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="welcome">
+            <h1>Benvenuti su Risana!</h1>
+            <div class="welcome-social">             <!-- inserire link social -->
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="header-logo">
+            <img src="../assets/img/RISANA.png" alt="">
+        </div>
+         <!-- Menù -->
+        <nav class="navigation">
+            <div class="menu">
+                <input class="menu-btn" id="menu-btn" type="checkbox">
+                <label for="menu-btn" class="menu-icon menu-icon-open">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+                <label for="menu-btn" class="menu-icon menu-icon-close">
+                    <span class="close material-symbols-outlined">close</span>
+                </label>
+                <ul class="options">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../chi-siamo/">Chi siamo</a></li>
+                    <li><a href="../prodotti/">Prodotti</a></li>
+                    <li><a href="../contatti/">Contatti</a></li>
+                    <li><a href="https://www.consorzioconleapi.it/" target="_blank">Con le api distribuzione</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-img header-img-contact">
+           <div class="header-img-content">
+              <h1>Contattaci!</h1>
+              <p>
+                 Servizi e noleggio di strumentazione all’avanguardia per restauri d’eccellenza, 
+                 tecnologia brevettata per opere senza tempo
+              </p>
+              <p>Rivenditore autorizzato prodotti IBIX Srl</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact" id="contact">
+        <h2>Contattaci</h2>
+        <div class="contact-form" id="contact">
+            <form id="contact-form">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Es. Mario" required>
+                <label>Cognome</label>
+                <input type="text" name="surname" placeholder="Es. Rossi" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="esempio@email.com" required>
+                <label>Messaggio</label>
+                <textarea name="message" placeholder="Scrivi il tuo messaggio.." required></textarea>
+                <button class="contact-form-btn" id="contact-form-btn" type="submit">Invia</button>
+                <p id="status"></p>
+            </form>
+            <div class="contact-form-maps">
+                <h3>Vieni a trovarci!</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.9095468944365!2d14.129275176971799!3d42.51473017117883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1331a5a15ab3c95f%3A0x76bc266c3fc51f0f!2sCon%20Le%20Api%20Distribuzione%20-%20www.consorzioconleapi.it!5e0!3m2!1sit!2sit!4v1726847651536!5m2!1sit!2sit" 
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="link-card">
+        <h2>Soluzioni su misura per un risultato impeccabile!</h2>
+        <p>Scopri come i nostri metodi proteggono e valorizzano ogni superficie</p>
+        <a href="../prodotti/">Vai a prodotti e servizi</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info footer-container-box">
+                <h3>Risana</h3>
+                <p>Str. Lungofino, 53</p>
+                <p>65013 Città Sant’Angelo PE</p>
+            </div>
+            <div class="footer-contact footer-container-box">
+                <h3>Contatti</h3>
+                <p>Email: risanainfo@gmail.com</p>
+                <p>Telefono: 338 964 3622 / 085 4212327</p>
+                <a href="../index.html#contact">Richiedi informazioni</a>
+            </div>
+            <div class="footer-time footer-container-box">
+                <h3>Orari di apertura</h3>
+                <p>Lunedì - Venerdì<br>8:00 - 18:00 (orario continuato)</p>
+                <p>Sabato 9:00-12:00 / Domenica chiusi</p>
+            </div>
+        </div>
+        
+        <div class="footer-container">
+            <img src="../assets/img/RISANA.png" alt="">
+        </div>
+        
+        <div class="footer-logo">
+            <div class="footer-logo-menu">
+                <span>Link Utili</span>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../chi-siamo/">Chi siamo</a></li>
+                    <li><a href="../prodotti/">Prodotti</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo-social">
+                <a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>Copyright© 2024 Jacopo Di Biagio. Designed by Jacopo Di Biagio. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- emailjs -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init("eYUaGyTqSXbJOeW7y");
+        })();
+    </script>
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('status').innerHTML = "Invio in corso...";
+            emailjs.sendForm('contact_service', 'template_0o3z3rb', this)
+            .then(function() {
+                document.getElementById('status').innerHTML = "Messaggio inviato con successo!";
+            }, function(error) {
+                document.getElementById('status').innerHTML = "Errore nell'invio: " + JSON.stringify(error);
+            });
+         });
+    </script>
+</body>
+</html>

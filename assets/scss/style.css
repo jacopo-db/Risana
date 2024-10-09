@@ -232,14 +232,14 @@ body section {
 .header-logo {
   background-color: #fff;
   width: 100%;
-  height: 200px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .header-logo img {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
 }
 .header-img {
   position: relative;
@@ -265,6 +265,9 @@ body section {
 .header-img-products {
   background-image: url("../img/prodotti.jpg");
 }
+.header-img-contact {
+  background-image: url("../img/contatti.jpg");
+}
 .header-img::before {
   content: "";
   position: absolute;
@@ -272,7 +275,7 @@ body section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
 
@@ -285,17 +288,20 @@ body section {
   }
 }
 @media (min-width: 961px) {
+  .header .welcome h1 {
+    font-size: 35px;
+  }
   .header .welcome-social {
     gap: 45px;
   }
   .header-logo {
     height: 250px;
-    justify-content: flex-start;
-    margin-left: 20%;
+    position: relative;
+    right: 25%;
   }
   .header-logo img {
-    width: 180px;
-    height: 180px;
+    width: 210px;
+    height: 210px;
   }
 }
 .method h2 {
@@ -585,9 +591,13 @@ body section {
 }
 .contact-form #contact-form-btn {
   margin: 20px 0;
-  box-shadow: 0px 0px 8px 1px #256da8;
+  box-shadow: 0px 0px 6px 1px #256da8;
   opacity: 0.8;
   width: 50%;
+  padding: 10px;
+  background-color: #a3d359;
+  border-radius: 10px;
+  border: 0;
 }
 .contact-form #contact-form-btn:hover {
   opacity: 1;

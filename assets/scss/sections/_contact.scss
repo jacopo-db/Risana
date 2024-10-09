@@ -19,9 +19,13 @@
         }
         #contact-form-btn{
             margin: 20px 0;
-            box-shadow: 0px 0px 8px 1px $primary-blue;
+            box-shadow: 0px 0px 6px 1px $primary-blue;
             opacity: 0.8;
             width: 50%;
+            padding: 10px;
+            background-color: $primary-green;
+            border-radius: 10px;
+            border: 0;
             &:hover{
                 opacity: 1;
                 cursor: pointer;
