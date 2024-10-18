@@ -28,9 +28,12 @@
     border-radius: 10px;
     padding: 20px;
     img{
-        width: 273px;
-        height: 290px;
+        width: 223px;
+        height: 240px;
         object-fit: cover;
+        &:hover{
+            scale: 1.1;
+        }
     }
     .products-info{
         display: flex;
@@ -68,10 +71,11 @@
     .products-container-box-card{
         width: 30%;
         min-height: 700px;
+        min-width: 355px;
         .products-info{
             gap: 40px;
             button{
-                padding: 20px 30px;
+                padding: 15px 25px;
             }
         }
     }
