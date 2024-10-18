@@ -258,8 +258,11 @@ body section {
 }
 .header .welcome-social {
   display: flex;
-  gap: 20px;
+  gap: 60px;
   right: 30px;
+}
+.header .welcome-social a {
+  scale: 1.4;
 }
 .header .welcome-social a:hover {
   color: #256da8;
@@ -329,7 +332,7 @@ body section {
     font-size: 35px;
   }
   .header .welcome-social {
-    gap: 45px;
+    gap: 80px;
   }
   .header-logo {
     height: 250px;

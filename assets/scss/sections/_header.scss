@@ -10,9 +10,10 @@
         opacity: 0.8;
         &-social{
             display: flex;
-            gap: 20px;
+            gap: 60px;
             right: 30px;
             a{
+                scale: 1.4;
             &:hover{
                 color: $primary-blue;
                 opacity: 1;
@@ -92,7 +93,7 @@
                 font-size: 35px;
             }
             &-social{
-                gap: 45px;
+                gap: 80px;
             }
         }
         &-logo{
