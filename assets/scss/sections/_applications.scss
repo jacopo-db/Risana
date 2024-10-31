@@ -1,0 +1,123 @@
+.applications-title{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 200px 16px;
+    background-color: $primary-blue;
+    color: #fff;
+}
+.applications{
+    &-main{
+        display: flex;
+        justify-content: center;
+        &-container{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+            padding: 16px;
+            text-align: center;
+            width: 80%;
+            &-box{
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+                align-items: center;
+                padding-top: 50px;
+                h2{
+                    color: $primary-blue;
+                }
+                &-cards{
+                    box-shadow: 0px 0px 15px 10px $primary-grey;
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    padding-bottom: 20px;
+                    img{
+                        width: 100%;
+                    }
+                    h3, p{
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+
+        &-menu{
+            height: 100%;
+            width: 20%;
+            display: none;
+            padding: 100px 0;
+            h4{
+                margin-bottom: 20px;
+            }
+            &-box{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                a{
+                    opacity: 0.8;
+                    padding: 2px 0;
+                    &:hover{
+                        opacity: 1;
+                        border-bottom: 1px solid $primary-blue;
+                    }
+                }
+                &-title{
+                    color: $primary-blue;
+                    font-weight: bold;
+                }
+                &-second{
+                    padding-top: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    a{
+                        font-size: 18px;
+                    }
+                }
+                #button-up{
+                    color: $primary-green;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    &:hover{
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Desktop style
+@media (min-width: $desktop){
+    .applications{
+        &-main{
+            justify-content: space-between;
+            &-container{
+                width: 80%;
+                &-box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &-cards{
+                        width: 70%;
+                        padding-bottom: 70px;
+                        h3, p{
+                            padding: 0 70px;
+                        }
+                    }
+                }
+            }
+            &-menu{
+                display: flex;
+                flex-direction: column;
+                position: sticky;
+                top: 40px;
+            }
+        }
+    }
+}

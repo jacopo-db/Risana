@@ -12,7 +12,7 @@
  // home
 @import "sections/header";
 @import "sections/method-whoiam-home";
-@import "sections/applications-area";
+@import "sections/applications-home";
 @import "sections/services-home";
 @import "sections/contact";
 @import "sections/footer";
@@ -22,3 +22,6 @@
 
 // prodotti
 @import "sections/products";
+
+// settori di applicazione
+@import "sections/applications";

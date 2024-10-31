@@ -1,3 +1,12 @@
+.products-title{
+    background-color: $primary-grey;
+    padding: 100px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
 .products{
     text-align: center;
     display: flex;
@@ -52,6 +61,9 @@
 
 // Desktop style
 @media (min-width: $desktop){
+    .products-title{
+        padding: 150px 16px;
+    }
     .products{
         &-container{
             display: flex;

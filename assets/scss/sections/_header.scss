@@ -61,6 +61,9 @@
     &-img-contact{
         background-image: url("../img/contatti.jpg");
     }
+    &-img-applications{
+        background-image: url("../img/settori-applicazione.jpeg");
+    }
     &-img::before{
         content: "";
         position: absolute;
@@ -86,6 +89,7 @@
     }
 }
 
+// desktop style
 @media (min-width: $desktop){
     .header{
         .welcome{

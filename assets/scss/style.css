@@ -7,6 +7,7 @@
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Libre Franklin", sans-serif;
   width: 100%;
 }
@@ -111,9 +112,16 @@ body section {
   color: #a3d359;
 }
 
-@media (min-width: 961px) {
+@media (min-width: 1520px) {
   .navigation {
     padding: 0 8%;
+  }
+  .navigation .menu .options a {
+    padding: 20px 40px;
+  }
+}
+@media (min-width: 961px) {
+  .navigation {
     max-width: 100%;
     height: 74px;
   }
@@ -128,9 +136,6 @@ body section {
   .navigation .menu .options {
     display: flex;
     overflow: visible;
-  }
-  .navigation .menu .options a {
-    padding: 20px 40px;
   }
   .navigation .menu-icon {
     display: none;
@@ -191,7 +196,7 @@ body section {
   align-items: center;
   width: 80%;
   gap: 15px;
-  box-shadow: 0px 0px 8px 1px #000;
+  box-shadow: 0px 0px 15px 10px #ECF0F1;
   border-radius: 10px;
   padding: 20px;
 }
@@ -307,6 +312,9 @@ body section {
 }
 .header-img-contact {
   background-image: url("../img/contatti.jpg");
+}
+.header-img-applications {
+  background-image: url("../img/settori-applicazione.jpeg");
 }
 .header-img::before {
   content: "";
@@ -868,6 +876,15 @@ body section {
     width: 40%;
   }
 }
+.products-title {
+  background-color: #ECF0F1;
+  padding: 100px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
 .products {
   text-align: center;
   display: flex;
@@ -921,6 +938,9 @@ body section {
 }
 
 @media (min-width: 961px) {
+  .products-title {
+    padding: 150px 16px;
+  }
   .products-container {
     display: flex;
     flex-direction: column;
@@ -948,5 +968,123 @@ body section {
   .products-rent-u .services-home-container-cards {
     max-width: none;
     width: 40%;
+  }
+}
+.applications-title {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 200px 16px;
+  background-color: #256da8;
+  color: #fff;
+}
+
+.applications-main {
+  display: flex;
+  justify-content: center;
+}
+.applications-main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 16px;
+  text-align: center;
+  width: 80%;
+}
+.applications-main-container-box {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  padding-top: 50px;
+}
+.applications-main-container-box h2 {
+  color: #256da8;
+}
+.applications-main-container-box-cards {
+  box-shadow: 0px 0px 15px 10px #ECF0F1;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+.applications-main-container-box-cards img {
+  width: 100%;
+}
+.applications-main-container-box-cards h3, .applications-main-container-box-cards p {
+  padding: 0 20px;
+}
+.applications-main-menu {
+  height: 100%;
+  width: 20%;
+  display: none;
+  padding: 100px 0;
+}
+.applications-main-menu h4 {
+  margin-bottom: 20px;
+}
+.applications-main-menu-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.applications-main-menu-box a {
+  opacity: 0.8;
+  padding: 2px 0;
+}
+.applications-main-menu-box a:hover {
+  opacity: 1;
+  border-bottom: 1px solid #256da8;
+}
+.applications-main-menu-box-title {
+  color: #256da8;
+  font-weight: bold;
+}
+.applications-main-menu-box-second {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.applications-main-menu-box-second a {
+  font-size: 18px;
+}
+.applications-main-menu-box #button-up {
+  color: #a3d359;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.applications-main-menu-box #button-up:hover {
+  border: 0;
+}
+
+@media (min-width: 961px) {
+  .applications-main {
+    justify-content: space-between;
+  }
+  .applications-main-container {
+    width: 80%;
+  }
+  .applications-main-container-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .applications-main-container-box-cards {
+    width: 70%;
+    padding-bottom: 70px;
+  }
+  .applications-main-container-box-cards h3, .applications-main-container-box-cards p {
+    padding: 0 70px;
+  }
+  .applications-main-menu {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

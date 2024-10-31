@@ -51,10 +51,24 @@
         }
     }
 }
+
+// Nav extencion
+@media (min-width: 1520px){
+    .navigation{
+        padding: 0 8%;
+        .menu{
+            .options{
+                a{
+                    padding: 20px 40px;
+                }
+            }
+        }
+    }
+}
+
 // Desktop style
 @media (min-width: $desktop){
     .navigation{
-        padding: 0 8%;
         max-width: 100%; //2560px;
         height: 74px;
         .menu{
@@ -67,9 +81,6 @@
             .options{
                 display: flex;
                 overflow: visible;
-                a{
-                    padding: 20px 40px;
-                }
             }
             &-icon{
                 display: none;
