@@ -81,6 +81,9 @@
             .options{
                 display: flex;
                 overflow: visible;
+                a{
+                    font-size: 25px;
+                }
             }
             &-icon{
                 display: none;

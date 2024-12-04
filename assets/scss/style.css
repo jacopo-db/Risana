@@ -137,6 +137,9 @@ body section {
     display: flex;
     overflow: visible;
   }
+  .navigation .menu .options a {
+    font-size: 25px;
+  }
   .navigation .menu-icon {
     display: none;
   }
@@ -234,6 +237,59 @@ body section {
   cursor: pointer;
   opacity: 1;
 }
+.products-container-box-card .ral {
+  width: 90%;
+  height: 35px;
+}
+.products-container-box-card #beige222 {
+  background-color: #E3D1B3;
+}
+.products-container-box-card #yellow344 {
+  background-color: #EABC02;
+}
+.products-container-box-card #red233 {
+  background-color: #BC0015;
+}
+.products-container-box-card #green475 {
+  background-color: #003F2A;
+}
+.products-container-box-card #brown813 {
+  background-color: #72291F;
+}
+.products-container-box-card #blue536 {
+  background-color: #026293;
+}
+.products-container-box-card #blue542 {
+  background-color: #438BC3;
+}
+.products-container-box-card #grey613 {
+  background-color: #BDBEBB;
+}
+.products-container-box-card #grey654 {
+  background-color: #898F96;
+}
+.products-container-box-card #grey695 {
+  background-color: #73797F;
+}
+.products-container-box-card #black700 {
+  background-color: #131516;
+}
+.products-container-box-card #grey640 {
+  background-color: #3B3D42;
+}
+.products-container-box-card #brown838 {
+  background-color: #3B3029;
+}
+.products-container-box-card #white110 {
+  background-color: #F6F5F2;
+  border: 1px solid black;
+}
+.products-container-box-card #ral7001 {
+  background-color: #9AA6AB;
+}
+.products-container-box-card #ral7035 {
+  background-color: #DAD6D2;
+}
 
 @media (min-width: 961px) {
   .link-card {
@@ -316,15 +372,11 @@ body section {
 .header-img-applications {
   background-image: url("../img/settori-applicazione.jpeg");
 }
-.header-img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+.header-img-rentU {
+  background-image: url("../img/noleggio-U.jpg");
+}
+.header-img-sale {
+  background-image: url("https://www.ibixindustrial.it/media/jub/images/default/fiamma2.jpg");
 }
 
 @media (max-width: 600px) {
@@ -524,6 +576,7 @@ body section {
   padding: 30px 16px;
   background-color: #254872;
   color: #fff;
+  margin-top: 100px;
 }
 .services-home-container {
   padding: 40px 0;
@@ -901,13 +954,14 @@ body section {
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .products-rent-u {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   padding: 50px 0;
   gap: 30px;
   text-align: center;
@@ -927,6 +981,7 @@ body section {
   border-radius: 10px;
   color: #a3d359;
   opacity: 0.8;
+  margin-right: 20px;
 }
 .products-rent-u .services-home-container-cards a:hover {
   opacity: 1;
@@ -950,7 +1005,7 @@ body section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 80%;
   }
   .products-rent-u {
@@ -970,6 +1025,72 @@ body section {
     width: 40%;
   }
 }
+.selection-title {
+  background-color: #ECF0F1;
+  padding: 100px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.selection {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.selection-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+.selection-box-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  gap: 15px;
+  box-shadow: 0px 0px 15px 10px #ECF0F1;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  min-width: 300px;
+}
+.selection-box-card:hover {
+  scale: 1.1;
+}
+.selection-box-card img {
+  width: 203px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (min-width: 961px) {
+  .selection-title {
+    padding: 150px 16px;
+  }
+  .selection {
+    padding: 150px 0;
+  }
+  .selection-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .selection-box-card {
+    width: 20%;
+    min-height: 500px;
+    min-width: 355px;
+  }
+}
 .applications-title {
   display: flex;
   justify-content: space-around;
@@ -977,7 +1098,14 @@ body section {
   flex-wrap: wrap;
   padding: 200px 16px;
   background-color: #256da8;
+}
+.applications-title a {
   color: #fff;
+  opacity: 0.9;
+}
+.applications-title a:hover {
+  opacity: 1;
+  scale: 1.2;
 }
 
 .applications-main {

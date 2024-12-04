@@ -21,7 +21,7 @@
             flex-direction: column;
             align-items: center;
             gap: 40px;
-            margin-top: 20px;
+            margin-top: 60px;
         }
     }
 }
@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     padding: 50px 0;
     gap: 30px;
     text-align: center;
@@ -48,6 +49,7 @@
             border-radius: 10px;
             color: $primary-green;
             opacity: 0.8;
+            margin-right: 20px;
             &:hover{
                 opacity: 1;
                 box-shadow: 0 0 5px 2px $primary-green;
@@ -73,7 +75,7 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 width: 80%;
             }
         }
