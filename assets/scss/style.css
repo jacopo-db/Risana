@@ -207,6 +207,7 @@ body section {
   width: 223px;
   height: 240px;
   object-fit: cover;
+  border-radius: 10px;
 }
 .products-container-box-card img:hover {
   scale: 1.1;
@@ -377,6 +378,9 @@ body section {
 }
 .header-img-sale {
   background-image: url("https://www.ibixindustrial.it/media/jub/images/default/fiamma2.jpg");
+}
+.header-img-accessories {
+  background-image: url("https://www.ibix.it/images/jch-optimize/ng/images_masshead_masshead-accessori.webp");
 }
 
 @media (max-width: 600px) {
